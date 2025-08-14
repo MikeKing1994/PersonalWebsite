@@ -8,7 +8,12 @@ Create a virtual environment and install dependencies:
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+# On Unix/macOS
+source venv/bin/activate
+# On Windows (Command Prompt)
+venv\Scripts\activate.bat
+# On Windows PowerShell
+.\\venv\\Scripts\\Activate.ps1
 pip install -r requirements.txt
 ```
 
