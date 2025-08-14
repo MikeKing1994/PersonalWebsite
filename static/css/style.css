@@ -1,0 +1,29 @@
+/* Global Styles */
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",Arial,sans-serif;color:#333}
+
+body{background:#f4f6f8}
+
+.container{max-width:1200px;margin:auto;padding:0 1rem}
+
+/* Navbar */
+.navbar{background:#222;color:#fff;position:sticky;top:0;z-index:1000}
+.navbar .container{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-size:1.5rem;font-weight:bold;text-decoration:none;color:#fff}
+.nav-links{list-style:none;display:flex;gap:1rem}
+.nav-links li a{text-decoration:none;color:#fff;padding:.5rem 1rem;border-radius:4px}
+.nav-links li a:hover{background:#444}
+
+/* Hero */
+.hero{background:url('https://images.unsplash.com/photo-1517430816045-df4b7e1d3c2a?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;height:60vh;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}
+.hero .hero-content{background:rgba(0,0,0,.4);padding:2rem;border-radius:8px}
+.hero h1{font-size:3.5rem;margin-bottom:.5rem}
+.hero p{font-size:1.25rem;line-height:1.4}
+
+/* Content */
+.content{max-width:960px;margin:auto;padding:2rem 1rem}
+.section{margin-bottom:3rem}
+.section h2{border-bottom:2px solid #ddd;padding-bottom:.5rem;color:#444;font-size:2rem}
+.skill-list{list-style:none;display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem}
+.skill-list li{background:#fff;border-radius:8px;padding:1rem 1.5rem;box-shadow:0 2px 4px rgba(0,0,0,.1);flex:1 1 calc(33% - 2rem);min-width:200px;text-align:center}
+@media(max-width:768px){.skill-list li{flex:1 1 calc(50% - 2rem)}}
+@media(max-width:480px){.skill-list li{flex:1 1 100%}}

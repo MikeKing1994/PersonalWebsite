@@ -4,45 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mike King - Software Developer</title>
-    <style>
-        body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f4f6f8;color:#333;}
-        .hero{background:url('https://images.unsplash.com/photo-1517430816045-df4b7e1d3c2a?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;height:60vh;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;padding:0 1rem;}
-        .hero h1{font-size:4rem;margin:0.5rem 0;}
-        .hero p{font-size:1.5rem;margin:0.5rem 0;}
-        .content{max-width:960px;margin:auto;padding:2rem 1rem;}
-        h2{border-bottom:2px solid #ddd;padding-bottom:0.3rem;color:#444;}
-        ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:1rem;}
-        li{background:#fff;border-radius:8px;padding:1rem 1.5rem;box-shadow:0 2px 4px rgba(0,0,0,0.1);flex:1 1 calc(33% - 2rem);min-width:200px;text-align:center;}
-        @media(max-width:768px){li{flex:1 1 calc(50% - 2rem);} }
-        @media(max-width:480px){li{flex:1 1 100%;} }
-    </style>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <section class="hero">
-        <div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="brand">Mike King</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container hero-content">
             <h1>Mike King</h1>
             <p>Software Developer & Full-Stack Enthusiast</p>
             <p>Crafting elegant solutions with Python, JavaScript, and modern frameworks.</p>
         </div>
     </section>
+
     <main class="content">
-        <section id="about">
+        <section id="about" class="section">
             <h2>About Me</h2>
             <p>I am a passionate developer who loves turning complex problems into clean, maintainable code. With experience in backend services, frontend interfaces, and cloud deployments, I bring a holistic approach to every project.</p>
         </section>
-        <section id="skills">
+
+        <section id="skills" class="section">
             <h2>Core Skills</h2>
-            <ul>
-                <li>Python & Flask
-                    <br/>Django
-                </li>
+            <ul class="skill-list">
+                <li>Python &amp; Flask<br/>Django</li>
                 <li>JavaScript (React, Vue)</li>
-                <li>SQL & NoSQL databases</li>
-                <li>AWS & Docker</li>
-                <li>Agile & CI/CD pipelines</li>
+                <li>SQL &amp; NoSQL databases</li>
+                <li>AWS &amp; Docker</li>
+                <li>Agile &amp; CI/CD pipelines</li>
             </ul>
         </section>
-        <section id="projects">
+
+        <section id="projects" class="section">
             <h2>Projects (Coming Soon)</h2>
             <p>Explore my portfolio to see real-world applications and contributions.</p>
         </section>
